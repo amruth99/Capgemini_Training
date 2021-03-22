@@ -5,8 +5,8 @@ import java.util.function.Function;
 
 public class Exercise2 {
 	public static String addSpaces(String str) {
-//		Function<String, String> stringFormatter = (string) -> string.replace("", " ");
-//		return stringFormatter.apply(str).trim();
+		Function<String, String> stringFormatter = (string) -> string.replace("", " ");
+		return stringFormatter.apply(str).trim();
 		
 		
 		Function<String, String> addSpace = (x) -> x.replace(""," ");
